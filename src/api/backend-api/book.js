@@ -1,6 +1,8 @@
+// import env from "./api"
 const BookApi = {
     getAllBooks: async () => {
       const res = await fetch("/book", { method: "GET" })
+      // console.log(res);
       return res.json()
     },
     getBookByIsbn: async (bookIsbn) => {
@@ -29,4 +31,4 @@ const BookApi = {
     },
   }
   
-  module.exports = { BookApi }
+  export default  BookApi 
