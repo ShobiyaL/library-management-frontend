@@ -1,7 +1,7 @@
-// import env from "./api"
+ import { env } from "./api"
 const BookApi = {
     getAllBooks: async () => {
-      const res = await fetch("/book", { method: "GET" })
+      const res = await fetch(`${env.api}/book`, { method: "GET" })
       // console.log(res);
       return res.json()
     },
