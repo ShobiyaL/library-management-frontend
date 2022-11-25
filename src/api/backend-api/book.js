@@ -6,11 +6,11 @@ const BookApi = {
       return res.json()
     },
     getBookByIsbn: async (bookIsbn) => {
-      const res = await fetch(`/book/${bookIsbn}`, { method: "GET" })
+      const res = await fetch(`${env.api}/book/${bookIsbn}`, { method: "GET" })
       return res.json()
     },
     addBook: async (data) => {
-      const res = await fetch("/book", {
+      const res = await fetch(`${env.api}/book`, {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" },
@@ -18,7 +18,7 @@ const BookApi = {
       return res.json()
     },
     patchBookByIsbn: async (bookIsbn, data) => {
-      const res = await fetch(`/book/${bookIsbn}`, {
+      const res = await fetch(`${env.api}/book/${bookIsbn}`, {
         method: "PATCH",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" },
@@ -26,7 +26,7 @@ const BookApi = {
       return res.json()
     },
     deleteBook: async (bookIsbn) => {
-      const res = await fetch(`/book/${bookIsbn}`, { method: "DELETE" })
+      const res = await fetch(`${env.api}/book${bookIsbn}`, { method: "DELETE" })
       return res.json()
     },
   }
