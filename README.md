@@ -1,6 +1,6 @@
-login-----------------------------------------------------------------------------
-admin --------username: admin, password: admin(addbooks)---------------------------
-user----------username: user, password:user(to borrowbooks,return)
+login:
+1) ADMIN --------username: admin, password: admin(addbooks)
+2) USER----------username: user, password:user(to borrowbooks,return)
 
 
 
