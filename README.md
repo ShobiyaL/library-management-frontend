@@ -1,3 +1,9 @@
+login
+admin --------username: admin, password: admin(addbooks)
+user----------username: user, password:user(to borrowbooks,return)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
